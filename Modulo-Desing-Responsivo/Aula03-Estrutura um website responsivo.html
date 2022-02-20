@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+        }
+
+        .w50{
+            width: 50%;
+            padding: 0 10px;
+        }
+
+        .menu{ text-align: right;}
+
+        section.banner{
+            width: 100%;
+            min-height: 500px;
+            background-color: black;
+            text-align: center;
+            padding: 90px 0;
+            color: white;
+        }
+
+        section.diferencias{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .w33{
+            width: 33.3%;
+            padding: 0 10px;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: red;
+        }
+
+        @media screen and (max-with: 768px) {
+            header{
+                text-align: center;
+            }
+
+            .menu{
+                text-align: center;
+            }
+            .w33,.w50{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="w50">
+            <a href="#"><h2>Logo</h2></a>
+        </div>
+        <div class="w50">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">sobre</a>
+                <a href="#">contato</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>Comprar Agora</h2>
+    </section>
+
+    <section class="diferencias">
+        <div class="w33">
+            <h2>Texto de exemplo</h2>
+            <p>Conteúdo de exemplo</p>
+        </div>
+        <div class="w33">
+            <h2>Texto de exemplo</h2>
+            <p>Conteúdo de exemplo</p>
+        </div>
+        <div class="w33">
+            <h2>Texto de exemplo</h2>
+            <p>Conteúdo de exemplo</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>todos os direitos resevados</p>
+    </footer>
+</body>
+</html>
