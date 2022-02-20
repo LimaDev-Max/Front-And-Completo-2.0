@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wraper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .wraper .img{width: 25%;}
+
+        img{
+            max-width: 100%;
+        }
+
+        @media screen and (max-with: 1024px) {
+            .wraper .img{width: 33.3%;}
+        } 
+
+        @media screen and (max-with: 768px) {
+            .wraper .img{width: 50%;}
+        } 
+
+        @media screen and (max-with: 580px) {
+            .wraper .img{width: 100%;}
+        } 
+    </style>
 </head>
 <body>
-    
+    <div class="wraper">
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/12/desenvolvedor-full-stack-em-2021.png">
+        </div>
+
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/11/o-que-e-python.png">
+        </div>
+
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/06/css-inteligente.jpg">
+        </div>
+
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/11/o-que-e-python.png">
+        </div>
+
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/06/css-inteligente.jpg">
+        </div>
+
+        <div class="img">
+            <img src="https://blog.dankicode.com/wp-content/uploads/2020/12/desenvolvedor-full-stack-em-2021.png">
+        </div>
+    </div>
 </body>
 </html>
