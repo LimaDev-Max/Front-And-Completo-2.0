@@ -220,8 +220,16 @@ section.depoimentos > h1{
 
 .container-slider-single{
     float: left;
-    background-color: red;
-    padding: 10px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container-slider-single p{
+    margin: 15px 0;
+    color: #7E92AC;
+    font-size: 14px;
 }
 
 .slick-slide{
