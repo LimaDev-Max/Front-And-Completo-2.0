@@ -203,6 +203,71 @@ section.beneficios{
 
 .img-beneficios img{max-width: 100%;}
 
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding: 40px 0;
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.container-slider-single{
+    float: left;
+    background-color: red;
+    padding: 10px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+/* The Parent */
+.slick-list{
+    margin-left: -27px;
+}
+
+/***Slick slider***/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top: 80px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
 @media screen  and (max-width: 768px){
     .lista-beneficios,.img-beneficios{
         width: 100%;
