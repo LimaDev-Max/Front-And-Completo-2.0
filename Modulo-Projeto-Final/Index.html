@@ -17,12 +17,20 @@
                 <div class="logo-menu">
                     <a href="/"><img src="images/logoagencia.svg" alt=""></a>
                 </div> <!--logo-menu-->
-                <div class="items-menu">
+               <div class="items-menu">
                     <a href="#">Inicio</a>
                     <a href="#">Por que Nós?</a>
                     <a href="#">Depoimento</a>
                     <a class="contact-btn" href="">Entre em Contato</a>
-                </div> <!--items-menu-->
+                </div> <!--items-menu--> 
+                <div class="items-menu-mobile">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="menu-mobile">
+                        <a href="#">Inicio</a>
+                        <a href="#">Por que Nós?</a>
+                        <a href="#">Depoimento</a>
+                    </div>
+                </div>
             </div> <!--menu-->
 
             <div class="mockup">
@@ -150,9 +158,22 @@
                 <input type="email" placeholder="Seu e-mail...">
                 <textarea placeholder="Sua Mensagem..."></textarea>
                 <input type="submit" name="acao" value="Enviar!">
-            </form>
-        </div>
-    </section>
+            </form> <!--post-->
+        </div> <!--center-->
+    </section> <!--contato-->
+
+    <footer>
+        <div style="max-width: 1280px;" class="center">
+                <div class="text-footer">
+                    <p>Todos os direitos resevados a Danki code!</p>
+                </div> <!--text-footer-->
+            <div class="items-menu">
+                <a href="#">Inicio</a>
+                <a href="#">Por que Nós?</a>
+                <a class="contact-btn" href="">Contato</a>
+            </div> <!--items-menu--> 
+        </div> <!--center-->
+    </footer>
 
     <script src="jquery.js"></script>
     <script src="slick.min.js"></script>
@@ -174,6 +195,20 @@
                     slidesToScroll: 1
                   }
                 }],
+    });
+</script>
+<script>
+    var menuBtn = document.querySelector('.items-menu-mobile i');
+    menuBtn.addEventListener('click', ()=>{
+        let itemsMenu = document.querySelector('.menu-mobile');
+        if(itemsMenu.classList.contains('show')){
+            itemsMenu.classList.remove('show')
+            itemsMenu.classList.add('hide');
+        }else{
+            itemsMenu.classList.remove('hide')
+            itemsMenu.classList.add('show');
+        }
+        
     });
 </script>
 </body>
