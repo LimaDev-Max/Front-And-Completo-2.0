@@ -6,7 +6,8 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App  texto={{chamada: 'A danki é boa',chamada2:'danki code'}} />
+    <App  texto={{chamada: 'A danki é boa',chamada2:'danki code'}} />
   </React.StrictMode>,
   document.getElementById('root')
 );
