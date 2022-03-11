@@ -1,0 +1,9 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.HeaderMenu{
+    margin-right: 20px;
+}
