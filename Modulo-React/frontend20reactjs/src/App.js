@@ -1,12 +1,31 @@
-import './App.css';
+import React, { useState } from 'react';
 
-function App(props) {
+
+
+function App() {
+
+  // Declare uma nova variável de state, a qual chamaremos de "count"
+
+  const [count, setCount] = useState(0);
+
+
+
   return (
-    <div className="App">
-      <h2>{props.texto.chamada}</h2>
-      <p>{props.texto.chamada2}</p>
+
+    <div>
+
+      <p>You clicked {count} times</p>
+
+      <button onClick={() => setCount(count + 1)}>
+
+        Click me
+
+      </button>
+
     </div>
+
   );
+
 }
 
 export default App;
