@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  // Similar ao componentDidMount e componentDidUpdate:
+  const [hora, setHora] = useState(12);
+  const [minutos, setMinutos] = useState(20);
+  
   useEffect(() => {
-    // Atualiza o título do documento usando a API do browser
-    document.title = `Você clicou ${count} vezes`;
-  });
+    const interval = setInterval(() => {
+
+    }, 1000);
+    
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
-      <p>Você clicou {count} vezes</p>
-      <button onClick={() => setCount(count + 1)}>
-        Clique aqui
-      </button>
+      <h2>{hora}:{minutos}</h2>
     </div>
   );
 }
+
 export default App;
